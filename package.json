@@ -1,0 +1,20 @@
+{
+  "name": "SkillWing",
+  "description": "A RuneScape skill calculator based on efficiency",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "0.x",
+    "express": "3.x",
+    "mongoose": "3.x",
+    "request": "2.x",
+    "underscore": "1.x",
+    "winston": "0.x"
+  },
+  "contributors": [
+    {
+      "name": "Chris Wendt",
+      "email": "chrismwendt@gmail.com",
+      "timestamp": "2013.03.30 01:52"
+    }
+  ]
+}

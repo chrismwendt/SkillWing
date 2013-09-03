@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>SkillWing</title>
+        <style type="text/css">
+            body {
+                font-family: "Menlo for Powerline";
+                font-size: 9px;
+            }
+            h1 {
+                font-size: 10px;
+            }
+
+            input[type="text"].level {
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <label for="player_name">Player</label>
+        <input id="player_name" type="text">
+        <input id="search_player" type="button" value="Search">
+        -->
+
+        <h1>Skills</h1>
+        <%
+            _.each(skills, function(skill, index, list) {
+                print(skill+' ');
+                print('<input class="current level" id="'+skill+'_level_current" type="text">');
+                print(' / ');
+                print('<input class="target level" id="'+skill+'_level_target" type="text">');
+                // line break
+                if (index%3 == 2) { print('<br/>'); } else { print(' '); }
+            });
+        %>
+
+        <!--
+        <h1>Time value</h1>
+        <input id="time_value_textbox" type="text">
+        -->
+
+        <h1>Optimum training sequence</h1>
+        <div id="sequence">
+        </div>
+
+        <script src="jquery-1.10.0.js"></script>
+        <script>
+            var time_value;
+
+            $(document).ready(function() {
+                time_value = 1000000;
+                $('.level').on('input', function(event) {
+                    refresh();
+                });
+            });
+
+            function refresh() {
+                var skills = {};
+
+                $(".current").each(function(index, element) {
+                    var key = this.id.match(/[^_]+/)[0];
+                    if (!(key in skills)) {
+                        skills[key] = {};
+                    }
+                    skills[this.id.match(/[^_]+/)[0]]['current'] = this.value;
+                });
+                $(".target").each(function(index, element) {
+                    var key = this.id.match(/[^_]+/)[0];
+                    if (!(key in skills)) {
+                        skills[key] = {};
+                    }
+                    skills[this.id.match(/[^_]+/)[0]]['target'] = this.value;
+                });
+
+                $('#sequence').load('methods', {
+                    /*'time_value': $('#time_value_textbox').val(),*/
+                    'skills': skills
+                });
+            }
+
+            <!--
+            $('#time_value_textbox').on('input', function(event) {
+                refresh();
+            });
+            -->
+        </script>
+    </body>
+</html>

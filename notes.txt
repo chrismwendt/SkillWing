@@ -1,0 +1,77 @@
+TODO
+    consider players gain xp in discrete steps, might not land on level
+    consider node-stripe for payments
+    consider passport for user authorization (passport-stripe)
+    consider underscore.js for templating
+    consider nodejitsu for hosting
+    consider using Github
+    consider MongoDB for data
+    consider tracking stats over time
+
+Problems
+    people don't train efficiently because they lack some know-how and time, or they use a bad source
+        know-how to compare training methods
+            it's not hard to do simple comparisons, but most players don't know how
+            efficiency can get complicated with recursion
+        time to acquire data and perform the comparisons
+            best case now: spreadsheet which fetches prices which is a one time cost
+            more probable worse case: look up methods and type in prices by hand
+        other sources can be outdated by prices and lack context, but generally good (RS Wiki, YouTube)
+    current skill calculators are aren't very useful
+        they only say the # of widgets you need to make, not which type is most efficient
+        it gives the same results for everyone, even though time value varies between players
+        summoning planner is decent, but still doesn't factor in prices, time, or attempt to maximize XP
+    tracking your stats is tedious
+        by hand or screenshots takes time and doesn't format the data
+        rstracker does not update automatically
+
+Method comparison formulas
+    adjusted gp/xp = gp/xp - mm/h / xp/h           -> linear
+    adjusted xp/h  = xp/h * (mm/h / (mm/h - gp/h)) -> intuitive, asymptotic
+
+Web interface
+    [<\] SkillWing            Guardric [Resign]
+
+    ================= Skills ==================
+    [icon] 76/--    [icon] 56/--   [icon] 88/--
+    [icon] 45/--    [icon] 87/93   [icon] 57/90
+    [icon] 17/34    [icon] 24/38   [icon] 97/--
+    [icon] 76/--    [icon] 56/76   [icon] 88/--
+    _______________/Fletching   \______________
+    | Current level |_56| XP |___209,218|     |
+    | Target  level |_76| XP |_2,119,309| [X] |
+    -------------------------------------------
+    [icon] 45/--    [icon] 87/93   [icon] 57/90
+    [icon] 17/34    [icon] 24/38   [icon] 97/--
+    [icon] 76/--    [icon] 56/--   [icon] 88/--
+    [icon] 45/--    [icon] 87/93   [icon] 57/90
+
+    =============== Time value ================
+    |___3,209,218| GP/h             [Presets|v]
+
+    ======== Optimum training sequence ========
+    1 Magic shieldbow x840                12.7h
+      Fletching 92-95                 204k XP/h
+      [Show details]                  -40k GP/h
+      
+    2 Emerald ring x12,310                53.5h
+      Crafting 86-96                128.8k XP/h
+      [Hide details]               -300.3k GP/h
+      |
+      |Requirements
+      |    20 Crafting
+      |Total supplies
+      |    Gold ring x12,310: 26 GP each
+      |    Emerald x12,310: 42 GP each 
+      |Total products
+      |    Emerald ring x12,310: 48 GP each
+      |
+      |120 XP each, -24 GP each, 640 units/h
+
+    3 Magic shortbow x8,042               20.1h
+      Fletching 89-92               201.1k XP/h
+      [Show details]                  -89k GP/h
+
+    ================= Totals ==================
+    103.2 hours of training
+    4.5 hours to recover -4.8m GP

@@ -1,0 +1,566 @@
+{
+    "Shortbow (u)": {
+        "name": "Shortbow (u)",
+        "requirements": {
+            "Fletching": 5
+        },
+        "supplies": [
+            {
+                "id": "1511",
+                "name": "Logs",
+                "rate": -1680
+            },
+            {
+                "id": "50",
+                "name": "Shortbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 8400
+        }
+    },
+    "Shortbow": {
+        "name": "Shortbow",
+        "requirements": {
+            "Fletching": 5
+        },
+        "supplies": [
+            {
+                "id": "50",
+                "name": "Shortbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "841",
+                "name": "Shortbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 12600
+        }
+    },
+    "Shieldbow (u)": {
+        "name": "Shieldbow (u)",
+        "requirements": {
+            "Fletching": 10
+        },
+        "supplies": [
+            {
+                "id": "1511",
+                "name": "Logs",
+                "rate": -1680
+            },
+            {
+                "id": "48",
+                "name": "Shieldbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 16800
+        }
+    },
+    "Shieldbow": {
+        "name": "Shieldbow",
+        "requirements": {
+            "Fletching": 10
+        },
+        "supplies": [
+            {
+                "id": "48",
+                "name": "Shieldbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "839",
+                "name": "Shieldbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 25200
+        }
+    },
+    "Oak shortbow (u)": {
+        "name": "Oak shortbow (u)",
+        "requirements": {
+            "Fletching": 20
+        },
+        "supplies": [
+            {
+                "id": "1521",
+                "name": "Oak logs",
+                "rate": -1680
+            },
+            {
+                "id": "54",
+                "name": "Oak shortbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 27720
+        }
+    },
+    "Oak shortbow": {
+        "name": "Oak shortbow",
+        "requirements": {
+            "Fletching": 20
+        },
+        "supplies": [
+            {
+                "id": "54",
+                "name": "Oak shortbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "843",
+                "name": "Oak shortbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 41580
+        }
+    },
+    "Oak shieldbow (u)": {
+        "name": "Oak shieldbow (u)",
+        "requirements": {
+            "Fletching": 25
+        },
+        "supplies": [
+            {
+                "id": "1521",
+                "name": "Oak logs",
+                "rate": -1680
+            },
+            {
+                "id": "56",
+                "name": "Oak shieldbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 42000
+        }
+    },
+    "Oak shieldbow": {
+        "name": "Oak shieldbow",
+        "requirements": {
+            "Fletching": 25
+        },
+        "supplies": [
+            {
+                "id": "56",
+                "name": "Oak shieldbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "845",
+                "name": "Oak shieldbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 63000
+        }
+    },
+    "Willow shortbow (u)": {
+        "name": "Willow shortbow (u)",
+        "requirements": {
+            "Fletching": 35
+        },
+        "supplies": [
+            {
+                "id": "1519",
+                "name": "Willow logs",
+                "rate": -1680
+            },
+            {
+                "id": "60",
+                "name": "Willow shortbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 55943.99999999999
+        }
+    },
+    "Willow shortbow": {
+        "name": "Willow shortbow",
+        "requirements": {
+            "Fletching": 35
+        },
+        "supplies": [
+            {
+                "id": "60",
+                "name": "Willow shortbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "849",
+                "name": "Willow shortbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 83916
+        }
+    },
+    "Willow shieldbow (u)": {
+        "name": "Willow shieldbow (u)",
+        "requirements": {
+            "Fletching": 40
+        },
+        "supplies": [
+            {
+                "id": "1519",
+                "name": "Willow logs",
+                "rate": -1680
+            },
+            {
+                "id": "58",
+                "name": "Willow shieldbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 69720
+        }
+    },
+    "Willow shieldbow": {
+        "name": "Willow shieldbow",
+        "requirements": {
+            "Fletching": 40
+        },
+        "supplies": [
+            {
+                "id": "58",
+                "name": "Willow shieldbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "847",
+                "name": "Willow shieldbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 104580
+        }
+    },
+    "Maple shortbow (u)": {
+        "name": "Maple shortbow (u)",
+        "requirements": {
+            "Fletching": 50
+        },
+        "supplies": [
+            {
+                "id": "1517",
+                "name": "Maple logs",
+                "rate": -1680
+            },
+            {
+                "id": "64",
+                "name": "Maple shortbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 84000
+        }
+    },
+    "Maple shortbow": {
+        "name": "Maple shortbow",
+        "requirements": {
+            "Fletching": 50
+        },
+        "supplies": [
+            {
+                "id": "64",
+                "name": "Maple shortbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "853",
+                "name": "Maple shortbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 126000
+        }
+    },
+    "Maple shieldbow (u)": {
+        "name": "Maple shieldbow (u)",
+        "requirements": {
+            "Fletching": 55
+        },
+        "supplies": [
+            {
+                "id": "1517",
+                "name": "Maple logs",
+                "rate": -1680
+            },
+            {
+                "id": "62",
+                "name": "Maple shieldbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 97944
+        }
+    },
+    "Maple shieldbow": {
+        "name": "Maple shieldbow",
+        "requirements": {
+            "Fletching": 55
+        },
+        "supplies": [
+            {
+                "id": "62",
+                "name": "Maple shieldbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "851",
+                "name": "Maple shieldbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 146916
+        }
+    },
+    "Yew shortbow (u)": {
+        "name": "Yew shortbow (u)",
+        "requirements": {
+            "Fletching": 65
+        },
+        "supplies": [
+            {
+                "id": "1515",
+                "name": "Yew logs",
+                "rate": -1680
+            },
+            {
+                "id": "68",
+                "name": "Yew shortbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 113400
+        }
+    },
+    "Yew shortbow": {
+        "name": "Yew shortbow",
+        "requirements": {
+            "Fletching": 65
+        },
+        "supplies": [
+            {
+                "id": "68",
+                "name": "Yew shortbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "857",
+                "name": "Yew shortbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 170100
+        }
+    },
+    "Yew shieldbow (u)": {
+        "name": "Yew shieldbow (u)",
+        "requirements": {
+            "Fletching": 70
+        },
+        "supplies": [
+            {
+                "id": "1515",
+                "name": "Yew logs",
+                "rate": -1680
+            },
+            {
+                "id": "66",
+                "name": "Yew shieldbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 126000
+        }
+    },
+    "Yew shieldbow": {
+        "name": "Yew shieldbow",
+        "requirements": {
+            "Fletching": 70
+        },
+        "supplies": [
+            {
+                "id": "66",
+                "name": "Yew shieldbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "855",
+                "name": "Yew shieldbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 189000
+        }
+    },
+    "Magic shortbow (u)": {
+        "name": "Magic shortbow (u)",
+        "requirements": {
+            "Fletching": 80
+        },
+        "supplies": [
+            {
+                "id": "1513",
+                "name": "Magic logs",
+                "rate": -1680
+            },
+            {
+                "id": "72",
+                "name": "Magic shortbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 139860
+        }
+    },
+    "Magic shortbow": {
+        "name": "Magic shortbow",
+        "requirements": {
+            "Fletching": 80
+        },
+        "supplies": [
+            {
+                "id": "72",
+                "name": "Magic shortbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "861",
+                "name": "Magic shortbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 209790
+        }
+    },
+    "Magic shieldbow (u)": {
+        "name": "Magic shieldbow (u)",
+        "requirements": {
+            "Fletching": 85
+        },
+        "supplies": [
+            {
+                "id": "1513",
+                "name": "Magic logs",
+                "rate": -1680
+            },
+            {
+                "id": "70",
+                "name": "Magic shieldbow (u)",
+                "rate": 1680
+            }
+        ],
+        "xp": {
+            "Fletching": 153720
+        }
+    },
+    "Magic shieldbow": {
+        "name": "Magic shieldbow",
+        "requirements": {
+            "Fletching": 85
+        },
+        "supplies": [
+            {
+                "id": "70",
+                "name": "Magic shieldbow (u)",
+                "rate": -2520
+            },
+            {
+                "id": "1777",
+                "name": "Bow string",
+                "rate": -2520
+            },
+            {
+                "id": "859",
+                "name": "Magic shieldbow",
+                "rate": 2520
+            }
+        ],
+        "xp": {
+            "Fletching": 230580
+        }
+    }
+}
