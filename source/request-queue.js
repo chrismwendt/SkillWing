@@ -1,6 +1,6 @@
 var __ = require('underscore');
 var request = require('request');
-//request = require('./request-proxy');
+//request = require('./request-proxy'); // for development without an Internet connection
 
 exports.minDelay = 1/16*1000;
 exports.maxDelay = 16*1000;
