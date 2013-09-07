@@ -45,6 +45,7 @@ Web interface
     [icon] 17/34    [icon] 24/38   [icon] 97/--
     [icon] 76/--    [icon] 56/--   [icon] 88/--
     [icon] 45/--    [icon] 87/93   [icon] 57/90
+    [icon] 45/--    [icon] 87/93
 
     =============== Time value ================
     |___3,209,218| GP/h             [Presets|v]
