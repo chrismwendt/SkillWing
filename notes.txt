@@ -7,6 +7,16 @@ TODO
     consider using Github
     consider MongoDB for data
     consider tracking stats over time
+    consider crowd sourcing training methods
+        adding, deleting, and modifying training methods
+            supplies are added with name, rate, and cost to obtain
+                cost to obtain can vary depending on skills and gear, so it could be based on samples
+        players submit their xp/h rates for training methods
+            maybe gain reputation by recording values close to others
+            example training method sample list:
+                at [Fletching 23, Crafting 38], Yew shortbow gives [Fletching 8400] xp/h
+                at [Fletching 24, Crafting 38], Yew shortbow gives [Fletching 8400] xp/h
+                at [Fletching 24, Crafting 38] with Fletcher gloves, Yew shortbow gives [Fletching 9200] xp/h
 
 Problems
     people don't train efficiently because they lack some know-how and time, or they use a bad source
