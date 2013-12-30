@@ -7,7 +7,7 @@ var rsNumber = require('./source/rs-number');
 var ge = require('./source/ge');
 var utility = require('./source/utility');
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 var methods = JSON.parse(fs.readFileSync('data/methods.json'));
 var skills = JSON.parse(fs.readFileSync('data/skills.json'));
