@@ -1,4 +1,6 @@
 TODO
+    make itemStream async with a callback
+    setup root domain to point to skillwing.herokuapp.com
     consider players gain xp in discrete steps, might not land on level
     consider node-stripe for payments
     consider passport for user authorization (passport-stripe)
