@@ -26,7 +26,7 @@ var getItems = function(onItem, onFinish) {
 
     _.each(_.range(totalCategories), function(category) {
         requestQueue.enqueue(getCategoryURL(category), function(response) {
-            console.log('Category ' + category + ' of ' + totalCategories);
+            console.log('Category ' + category + ' of ' + (totalCategories - 1) + ' (0-based)');
             var alphas = _(JSON.parse(response.body).alpha).filter(function(a) { return a['items'] > 0; });
             _.each(alphas, function(alpha) {
                 _.each(_.range(1, Math.ceil(alpha['items']/maxItemsPerPage)+1), function(page) {
