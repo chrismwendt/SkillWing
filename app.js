@@ -4,7 +4,6 @@ var qs = require('querystring');
 var fs = require('fs');
 var __ = require('underscore');
 var rsNumber = require('./source/rs-number');
-var ge = require('./source/ge');
 var utility = require('./source/utility');
 var db = require('./source/db');
 
