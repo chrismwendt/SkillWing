@@ -1,5 +1,6 @@
 var fs = require('fs');
 var experienceTable = JSON.parse(fs.readFileSync('data/experience_table.json'));
+var _ = require('underscore');
 
 var isNumber = function(n) {
     return typeof n == 'number' && !isNaN(n) && isFinite(n);
@@ -28,7 +29,16 @@ var experienceToLevel = function(e) {
     return e == experienceTable[index] ? index+1 : index;
 }
 
+var pricesToCSV = function(history) {
+    var csv = 'timestamp,price\n';
+    _.each(history, function(h) {
+        csv += h.timestamp + ',' + h.price + '\n';
+    });
+    return csv;
+}
+
 exports.isNumber = isNumber;
 exports.clamp = clamp;
 exports.levelToExperience = levelToExperience;
 exports.experienceToLevel = experienceToLevel;
+exports.pricesToCSV = pricesToCSV;
