@@ -81,8 +81,6 @@ d3.csv("Yew logs.csv", function(error, data) {
 
   data.forEach(function(d) {
     d.date = new Date(d.date * 1000);
-    // console.log(d.date);
-    // d.date = parseDate(d.date);
     d.price = +d.price;
   });
 
