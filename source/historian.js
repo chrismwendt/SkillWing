@@ -29,7 +29,8 @@ module.exports = function(db) {
                 var history = JSON.parse(response.body).daily;
 
                 _.each(history, function(price, timestamp) {
-                    if (!_.has(item.history, timestamp)) {
+                    timestamp = Number(timestamp);
+                    if (!_.contains(_.pluck(item.history, 'timestamp'), timestamp)) {
                         item.history.push({
                             timestamp: timestamp,
                             price: price
