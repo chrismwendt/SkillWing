@@ -26,7 +26,7 @@ exports.init = function(callback) {
 var Item = mongoose.model('Item', {
     id: Number,
     name: String,
-    priceHistory: [ {
+    history: [ {
             timestamp: Date,
             price: Number,
             volume: {
@@ -43,7 +43,7 @@ var createItem = function(newItem, timestamp, callback) {
     Item.create({
         id: newItem.id,
         name: newItem.name,
-        priceHistory: [ {
+        history: [ {
                 timestamp: timestamp,
                 price: rsNumber.toInt(newItem.current.price)
             }
@@ -53,12 +53,12 @@ var createItem = function(newItem, timestamp, callback) {
 
 var updateItem = function(item, newItem, timestamp, callback) {
     var price = rsNumber.toInt(newItem.current.price);
-    if (!_.any(item.priceHistory, function(entry) {
+    if (!_.any(item.history, function(entry) {
             return entry.timestamp == timestamp;
         })) {
         item.update({
             $pushAll: {
-                priceHistory: [ {
+                history: [ {
                         timestamp: timestamp,
                         price: price
                     }

@@ -70,7 +70,7 @@ module.exports = function(db) {
             db.Item.create({
                 id: item.id,
                 name: item.name,
-                priceHistory: []
+                history: []
             });
         });
     });

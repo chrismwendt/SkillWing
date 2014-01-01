@@ -20,7 +20,7 @@ var history = function(name, callback) {
         if (error || !result) {
             console.log('Could not get history for ' + name);
         }
-        callback(utility.pricesToCSV(result.priceHistory));
+        callback(utility.pricesToCSV(result.history));
     });
 }
 
