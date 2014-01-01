@@ -6,6 +6,7 @@ var __ = require('underscore');
 var rsNumber = require('./source/rs-number');
 var ge = require('./source/ge');
 var utility = require('./source/utility');
+var db = require('./source/db');
 
 var port = process.env.PORT || 3000;
 
@@ -21,7 +22,7 @@ app.get('/Yew logs.csv', function(request, response) {
 
 app.use(express.static(__dirname + '/public'));
 
-ge.start(function() {
+db.init(function() {
     app.listen(port);
     console.log('Listening on port '+port);
 });
