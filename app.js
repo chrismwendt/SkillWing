@@ -38,4 +38,5 @@ db.init(function() {
     app.listen(port);
     console.log('Listening on port '+port);
     require('./source/populate-items')(db);
+    require('./source/historian')(db);
 });
