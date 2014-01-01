@@ -4,7 +4,7 @@
 var url = require('url');
 var _ = require('underscore');
 var async = require('async');
-var requestQueue = require('./request-queue');
+var requestQueue = require('./request-queue')();
 
 var totalCategories = 38; // categories use 0-based indices
 var maxItemsPerPage = 12; // pages use 1-based indices

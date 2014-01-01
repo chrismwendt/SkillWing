@@ -2,7 +2,7 @@
 // http://services.runescape.com/m=rswiki/en/Grand_Exchange_APIs
 
 var async = require('async');
-var requestQueue = require('./request-queue');
+var requestQueue = require('./request-queue')();
 var _ = require('underscore');
 
 var getGraphURL = function(id) {
