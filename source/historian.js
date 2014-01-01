@@ -10,21 +10,21 @@ var getGraphURL = function(id) {
 }
 
 module.exports = function(db) {
-    async.forever(function(callback) {
+    async.forever(function(callback_original) {
         callback = function(error) {
             if (error) {
-                callback(error);
+                callback_original(error);
                 return;
             }
             
             console.log('updated prices, waiting 24 hours');
-            setTimeout(callback, 1000*3600*24); // update again in 24 hours
+            setTimeout(callback_original, 1000*3600*24); // update again in 24 hours
         }
 
         var stream = db.Item.find().stream();
 
         stream.on('data', function(item) {
-            requestQueue.enqueue(getGraphURL(item.id), function(response, timestamp) {
+            requestQueue.enqueue(getGraphURL(item.id), function(response, response_timestamp) {
                 var history = JSON.parse(response.body).daily;
 
                 _.each(history, function(price, timestamp) {
