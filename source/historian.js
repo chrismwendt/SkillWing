@@ -24,6 +24,7 @@ module.exports = function(db) {
         var stream = db.Item.find().stream();
 
         stream.on('data', function(item) {
+            stream.pause();
             requestQueue.enqueue(getGraphURL(item.id), function(response, response_timestamp) {
                 var history = JSON.parse(response.body).daily;
 
@@ -40,6 +41,7 @@ module.exports = function(db) {
                     if (error) {
                         console.log(error);
                     }
+                    stream.resume();
                 });
             });
         });
