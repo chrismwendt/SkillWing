@@ -7,10 +7,14 @@ var databaseURI = process.env.MONGOLAB_URI || 'mongodb://localhost/skillwing';
 var db = null;
 
 exports.init = function(callback) {
-    mongoose.connect(databaseURI, {
-        user: process.env.MONGOLAB_USERNAME,
-        pass: process.env.MONGOLAB_PASSWORD
-    });
+    if (process.env.MONGOLAB_USERNAME !== undefined) {
+        mongoose.connect(databaseURI, {
+            user: process.env.MONGOLAB_USERNAME,
+            pass: process.env.MONGOLAB_PASSWORD
+        });
+    } else {
+        mongoose.connect(databaseURI);
+    }
     db = mongoose.connection;
     db.on('error', console.error.bind(console, 'connection error:'));
     db.once('open', function() {
