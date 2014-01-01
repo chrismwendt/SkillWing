@@ -42,8 +42,36 @@ var getItems = function(onItem, onFinish) {
 };
 
 // Calls callback(item, timestamp) for each item in the GE database.
-exports.itemStream = function(callback) {
+var itemStream = function(callback) {
     async.forever(function(again) {
-        getItems(callback, again);
+        getItems(callback, function() {
+            console.log('populated items, waiting 24 hours');
+            setTimeout(again, 1000*3600*24); // populate again in 24 hours
+        });
     });
 };
+
+module.exports = function(db) {
+    itemStream(function(item, timestamp) {
+        db.Item.findOne({
+            id: item.id
+        }, function(error, existingItem) {
+            if (error) {
+                callback(error);
+                return;
+            }
+
+            if (existingItem) {
+                return;
+            }
+
+            console.log(item.name + ' is a new item!');
+
+            db.Item.create({
+                id: item.id,
+                name: item.name,
+                priceHistory: []
+            });
+        });
+    });
+}
