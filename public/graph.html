@@ -51,13 +51,13 @@ var brush = d3.svg.brush()
 
 var area = d3.svg.area()
     .interpolate("monotone")
-    .x(function(d) { return x(d.date); })
+    .x(function(d) { return x(d.timestamp); })
     .y0(height)
     .y1(function(d) { return y(d.price); });
 
 var area2 = d3.svg.area()
     .interpolate("monotone")
-    .x(function(d) { return x2(d.date); })
+    .x(function(d) { return x2(d.timestamp); })
     .y0(height2)
     .y1(function(d) { return y2(d.price); });
 
@@ -80,11 +80,11 @@ var context = svg.append("g")
 d3.csv("Yew logs.csv", function(error, data) {
 
   data.forEach(function(d) {
-    d.date = new Date(d.date * 1000);
+    d.timestamp = new Date(d.timestamp * 1000);
     d.price = +d.price;
   });
 
-  x.domain(d3.extent(data.map(function(d) { return d.date; })));
+  x.domain(d3.extent(data.map(function(d) { return d.timestamp; })));
   y.domain([0, d3.max(data.map(function(d) { return d.price; }))]);
   x2.domain(x.domain());
   y2.domain(y.domain());
