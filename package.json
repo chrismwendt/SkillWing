@@ -6,6 +6,7 @@
       "async": "0.x",
       "express": "3.x",
       "request": "2.x",
-      "underscore": "1.x"
+      "underscore": "1.x",
+      "mongoose": "3.x"
   }
 }
