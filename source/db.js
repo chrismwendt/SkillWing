@@ -27,7 +27,7 @@ var Item = mongoose.model('Item', {
     id: Number,
     name: String,
     history: [ {
-            timestamp: Date,
+            timestamp: Number,
             price: Number,
             volume: {
                 type: Number,
