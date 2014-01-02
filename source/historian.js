@@ -26,7 +26,15 @@ module.exports = function(db) {
         stream.on('data', function(item) {
             stream.pause();
             requestQueue.enqueue(getGraphURL(item.id), function(response, response_timestamp) {
-                var history = JSON.parse(response.body).daily;
+                var history;
+                try {
+                    history = JSON.parse(response.body).daily;
+                } catch (e) {
+                    console.log('Could not parse string ' + response.body);
+                    console.log(e);
+                    stream.resume();
+                    return;
+                }
 
                 _.each(history, function(price, timestamp) {
                     timestamp = Number(timestamp);
