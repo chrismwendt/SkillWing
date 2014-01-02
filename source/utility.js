@@ -31,7 +31,9 @@ var experienceToLevel = function(e) {
 
 var pricesToCSV = function(history) {
     var csv = 'timestamp,price\n';
-    _.each(history, function(h) {
+    _.each(_.sortBy(history, function(h) {
+        return h.timestamp;
+    }), function(h) {
         csv += h.timestamp + ',' + h.price + '\n';
     });
     return csv;
