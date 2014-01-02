@@ -90,10 +90,15 @@ var load = function(name) {
         d.price = +d.price;
       });
 
-      x.domain(d3.extent(data.map(function(d) { return d.timestamp; })));
+      var timestamps = data.map(function(d) { return d.timestamp.getTime(); });
+      var defaultFocusSize = 1000*3600*24*30*3; // 3 months
+
+      x.domain([new Date(d3.max([d3.min(timestamps), d3.max(timestamps) - defaultFocusSize])), new Date(d3.max(timestamps))]);
       y.domain([0, d3.max(data.map(function(d) { return d.price; }))]);
-      x2.domain(x.domain());
+      x2.domain(d3.extent(timestamps));
       y2.domain(y.domain());
+
+      brush.extent(x.domain());
 
       focus.append("path")
           .datum(data)
@@ -139,5 +144,7 @@ d3.select('#search').on('keydown', function() {
         load(value);
     }
 });
+
+load('Yew logs');
 
 </script>
