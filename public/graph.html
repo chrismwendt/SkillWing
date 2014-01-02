@@ -85,7 +85,7 @@ var load = function(name) {
     d3.csv(name + '.csv', function(error, data) {
 
       data.forEach(function(d) {
-        d.timestamp = new Date(d.timestamp * 1000);
+        d.timestamp = new Date(+d.timestamp);
         d.price = +d.price;
       });
 
