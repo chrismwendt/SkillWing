@@ -31,7 +31,15 @@ var getItems = function(onItem, onFinish) {
             _.each(alphas, function(alpha) {
                 _.each(_.range(1, Math.ceil(alpha['items']/maxItemsPerPage)+1), function(page) {
                     requestQueue.enqueue(getPageURL(category, alpha['letter'], page), function(response, timestamp) {
-                        _(JSON.parse(response.body).items).each(function(item) {
+                        var body;
+                        try {
+                            body = JSON.parse(response.body);
+                        } catch (e) {
+                            console.log(e);
+                            return;
+                        }
+
+                        _(body.items).each(function(item) {
                             onItem(item, timestamp);
                         });
                     });
