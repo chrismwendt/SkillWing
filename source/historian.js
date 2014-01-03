@@ -36,14 +36,12 @@ module.exports = function(db) {
                     return;
                 }
 
-                _.each(history, function(price, timestamp) {
-                    timestamp = Number(timestamp);
-                    if (!_.contains(_.pluck(item.history, 'timestamp'), timestamp)) {
-                        item.history.push({
-                            timestamp: timestamp,
-                            price: price
-                        });
-                    }
+                item.history = []; // clear history to retard database growth
+                item.history = _.map(history, function(price, timestamp) {
+                    return {
+                        timestamp: Number(timestamp),
+                        price: price
+                    };
                 });
 
                 item.save(function(error) {
