@@ -3,12 +3,8 @@ TODO
     make itemStream async with a callback
     setup root domain to point to skillwing.herokuapp.com
     consider players gain xp in discrete steps, might not land on level
-    consider node-stripe for payments
-    consider passport for user authorization (passport-stripe)
-    consider underscore.js for templating
-    consider nodejitsu for hosting
-    consider using Github
-    consider MongoDB for data
+    consider Bitcoin for payments
+    consider passport or "Log in with X" for user authorization
     consider tracking stats over time
     consider crowd sourcing training methods
         adding, deleting, and modifying training methods
@@ -33,7 +29,7 @@ Problems
     current skill calculators are aren't very useful
         they only say the # of widgets you need to make, not which type is most efficient
         it gives the same results for everyone, even though time value varies between players
-        summoning planner is decent, but still doesn't factor in prices, time, or attempt to maximize XP
+        summoning planner is decent, but still doesn't factor in prices or time, nor does it attempt to maximize XP
     tracking your stats is tedious
         by hand or screenshots takes time and doesn't format the data
         rstracker does not update automatically
