@@ -1,6 +1,5 @@
 TODO
     make timestamps consistent (either seconds or milliseconds)
-    make itemStream async with a callback
     setup root domain to point to skillwing.herokuapp.com
     consider players gain xp in discrete steps, might not land on level
     consider Bitcoin for payments
