@@ -19,6 +19,10 @@ app.get('/', function(request, response) {
     });
 });
 
+app.get('/guide', function(request, response) {
+    response.send([{h1: request.query.skill, h2: 'test'}]);
+});
+
 app.use(express.static(__dirname + '/public'));
 
 db.init(function() {

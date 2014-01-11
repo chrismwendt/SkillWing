@@ -53,20 +53,19 @@
             });
 
             function showGuide(selection, timeValue) {
-                var data = $.getJSON('guide', { skill: selection, timeValue: timeValue }, function(data) {
+                var data = $.getJSON('guide', { skill: selection, timeValue: timeValue }, function(rows) {
                     $('#guide').empty();
                     var table = $('#guide');
-                    for (var i = 0; i < data.headers.length; i++) {
-                        var header = data.headers[i];
-                        table.append($('<th>').text(header));
+                    var headers = Object.keys(rows[0]);
+                    for (var i = 0; i < headers.length; i++) {
+                        table.append($('<th>').text(headers[i]));
                     }
-                    for (var i = 0; i < data.rows.length; i++) {
-                        var row = data.rows[i];
-                        var keys = Object.keys(data.rows[0]);
+                    for (var i = 0; i < rows.length; i++) {
+                        var row = rows[i];
                         var tableRow = $('<tr>');
-                        for (var i = 0; i < keys.length; i++) {
-                            var key = keys[i];
-                            tableRow.append($('<td>').text(row[key]));
+                        for (var i = 0; i < headers.length; i++) {
+                            var header = headers[i];
+                            tableRow.append($('<td>').text(row[header]));
                         }
                         table.append(tableRow);
                     }
