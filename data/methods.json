@@ -1,5 +1,5 @@
-{
-    "Shortbow (u)": {
+[
+    {
         "name": "Shortbow (u)",
         "requirements": {
             "Fletching": 5
@@ -20,7 +20,7 @@
             "Fletching": 8400
         }
     },
-    "Shortbow": {
+    {
         "name": "Shortbow",
         "requirements": {
             "Fletching": 5
@@ -46,7 +46,7 @@
             "Fletching": 12600
         }
     },
-    "Shieldbow (u)": {
+    {
         "name": "Shieldbow (u)",
         "requirements": {
             "Fletching": 10
@@ -67,7 +67,7 @@
             "Fletching": 16800
         }
     },
-    "Shieldbow": {
+    {
         "name": "Shieldbow",
         "requirements": {
             "Fletching": 10
@@ -93,7 +93,7 @@
             "Fletching": 25200
         }
     },
-    "Oak shortbow (u)": {
+    {
         "name": "Oak shortbow (u)",
         "requirements": {
             "Fletching": 20
@@ -114,7 +114,7 @@
             "Fletching": 27720
         }
     },
-    "Oak shortbow": {
+    {
         "name": "Oak shortbow",
         "requirements": {
             "Fletching": 20
@@ -140,7 +140,7 @@
             "Fletching": 41580
         }
     },
-    "Oak shieldbow (u)": {
+    {
         "name": "Oak shieldbow (u)",
         "requirements": {
             "Fletching": 25
@@ -161,7 +161,7 @@
             "Fletching": 42000
         }
     },
-    "Oak shieldbow": {
+    {
         "name": "Oak shieldbow",
         "requirements": {
             "Fletching": 25
@@ -187,7 +187,7 @@
             "Fletching": 63000
         }
     },
-    "Willow shortbow (u)": {
+    {
         "name": "Willow shortbow (u)",
         "requirements": {
             "Fletching": 35
@@ -208,7 +208,7 @@
             "Fletching": 55943.99999999999
         }
     },
-    "Willow shortbow": {
+    {
         "name": "Willow shortbow",
         "requirements": {
             "Fletching": 35
@@ -234,7 +234,7 @@
             "Fletching": 83916
         }
     },
-    "Willow shieldbow (u)": {
+    {
         "name": "Willow shieldbow (u)",
         "requirements": {
             "Fletching": 40
@@ -255,7 +255,7 @@
             "Fletching": 69720
         }
     },
-    "Willow shieldbow": {
+    {
         "name": "Willow shieldbow",
         "requirements": {
             "Fletching": 40
@@ -281,7 +281,7 @@
             "Fletching": 104580
         }
     },
-    "Maple shortbow (u)": {
+    {
         "name": "Maple shortbow (u)",
         "requirements": {
             "Fletching": 50
@@ -302,7 +302,7 @@
             "Fletching": 84000
         }
     },
-    "Maple shortbow": {
+    {
         "name": "Maple shortbow",
         "requirements": {
             "Fletching": 50
@@ -328,7 +328,7 @@
             "Fletching": 126000
         }
     },
-    "Maple shieldbow (u)": {
+    {
         "name": "Maple shieldbow (u)",
         "requirements": {
             "Fletching": 55
@@ -349,7 +349,7 @@
             "Fletching": 97944
         }
     },
-    "Maple shieldbow": {
+    {
         "name": "Maple shieldbow",
         "requirements": {
             "Fletching": 55
@@ -375,7 +375,7 @@
             "Fletching": 146916
         }
     },
-    "Yew shortbow (u)": {
+    {
         "name": "Yew shortbow (u)",
         "requirements": {
             "Fletching": 65
@@ -396,7 +396,7 @@
             "Fletching": 113400
         }
     },
-    "Yew shortbow": {
+    {
         "name": "Yew shortbow",
         "requirements": {
             "Fletching": 65
@@ -422,7 +422,7 @@
             "Fletching": 170100
         }
     },
-    "Yew shieldbow (u)": {
+    {
         "name": "Yew shieldbow (u)",
         "requirements": {
             "Fletching": 70
@@ -443,7 +443,7 @@
             "Fletching": 126000
         }
     },
-    "Yew shieldbow": {
+    {
         "name": "Yew shieldbow",
         "requirements": {
             "Fletching": 70
@@ -469,7 +469,7 @@
             "Fletching": 189000
         }
     },
-    "Magic shortbow (u)": {
+    {
         "name": "Magic shortbow (u)",
         "requirements": {
             "Fletching": 80
@@ -490,7 +490,7 @@
             "Fletching": 139860
         }
     },
-    "Magic shortbow": {
+    {
         "name": "Magic shortbow",
         "requirements": {
             "Fletching": 80
@@ -516,7 +516,7 @@
             "Fletching": 209790
         }
     },
-    "Magic shieldbow (u)": {
+    {
         "name": "Magic shieldbow (u)",
         "requirements": {
             "Fletching": 85
@@ -537,7 +537,7 @@
             "Fletching": 153720
         }
     },
-    "Magic shieldbow": {
+    {
         "name": "Magic shieldbow",
         "requirements": {
             "Fletching": 85
@@ -563,4 +563,4 @@
             "Fletching": 230580
         }
     }
-}
+]

@@ -3,7 +3,7 @@ var __ = require('underscore');
 var utility = require('./utility');
 
 var output = 'data/methods.json.new';
-var methods = {};
+var methods = [];
 
 var items = JSON.parse(fs.readFileSync('cache/ge.json'));
 var map = {};
@@ -78,24 +78,18 @@ __.each(woods, function(wood, woodIndex) {
             'rate': bowsPerHour,
         });
 
-        methods[nameu] = {
+        methods.push({
             'name': nameu,
             'requirements': reqs,
             'supplies': suppliesu,
             'xp': xphu
-        };
-        methods[name] = {
+        });
+        methods.push({
             'name': name,
             'requirements': reqs,
             'supplies': supplies,
             'xp': xph
-        };
-    });
-});
-
-__.each(methods, function(method, methodName, methodsHash){
-    __.each(method['requirements'], function (requirement, requirementName, requirementsHash){
-        requirementsHash['requirementName'] = utility.levelToExperience(requirementsHash['requirementName']);
+        });
     });
 });
 
