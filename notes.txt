@@ -37,7 +37,17 @@ Method comparison formulas
     adjusted gp/xp = gp/xp - mm/h / xp/h           -> linear
     adjusted xp/h  = xp/h * (mm/h / (mm/h - gp/h)) -> intuitive, asymptotic
 
-Web interface
+Web interface (without goals and training sequences)
+    Time value [   120k]/h
+
+    Skill [  Fletching|v]
+
+    Levels Method               XP/h     GP/h
+    1-5    Arrow shaft          20k      +5k
+    5-15   Willow shortbow      80k      +15k
+    15-99  Yew longbow          180k     -10k
+
+Web interface (with goals and training sequences)
     [<\] SkillWing            Guardric [Resign]
 
     ================= Skills ==================
