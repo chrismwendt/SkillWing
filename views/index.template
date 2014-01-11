@@ -48,12 +48,12 @@
                 });
                 $('#skillMenu').on('change', function() {
                     var selection = this.value;
-                    showGuide(selection);
+                    showGuide(selection, time_value);
                 });
             });
 
-            function showGuide(selection) {
-                var data = $.getJSON('guide', { skill: selection }, function(data) {
+            function showGuide(selection, timeValue) {
+                var data = $.getJSON('guide', { skill: selection, timeValue: timeValue }, function(data) {
                     $('#guide').empty();
                     var table = $('#guide');
                     for (var i = 0; i < data.headers.length; i++) {
