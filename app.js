@@ -6,6 +6,7 @@ var __ = require('underscore');
 var rsNumber = require('./source/rs-number');
 var utility = require('./source/utility');
 var db = require('./source/db');
+var guide = require('./source/guide');
 
 var port = process.env.PORT || 3000;
 
@@ -20,7 +21,9 @@ app.get('/', function(request, response) {
 });
 
 app.get('/guide', function(request, response) {
-    response.send([{h1: request.query.skill, h2: 'test'}]);
+    guide.get(request.query.skill, request.query.timeValue, function(data) {
+        response.send(data);
+    });
 });
 
 app.use(express.static(__dirname + '/public'));
