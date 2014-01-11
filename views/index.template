@@ -22,22 +22,20 @@
         <input id="search_player" type="button" value="Search">
         -->
 
-        <h1>Skills</h1>
-        <%
-            _.each(skills, function(skill, index, list) {
-                print(skill+' ');
-                print('<input class="level" id="'+skill+'_level" type="text">');
-                // line break
-                if (index%3 == 2) { print('<br/>'); } else { print(' '); }
-            });
-        %>
-
         <h1>Time value</h1>
         <input id="time_value_textbox" type="text">
 
-        <h1>Optimum training sequence</h1>
-        <div id="sequence">
-        </div>
+        <h1>Skill</h1>
+        <select>
+        <%
+            _.each(skills, function(skill) {
+                print('<option value="' + skill + '">' + skill + '</option>');
+            });
+        %>
+        </select>
+
+        <table id="guide">
+        </table>
 
         <script src="jquery-1.10.0.js"></script>
         <script>
@@ -68,9 +66,9 @@
                     skills[this.id.match(/[^_]+/)[0]]['target'] = this.value;
                 });
 
-                $('#sequence').load('methods', {
-                    /*'time_value': $('#time_value_textbox').val(),*/
-                    'skills': skills
+                $('#guide').load('methods', {
+                    skill: 'Fletching',
+                    timeValue: time_value
                 });
             }
 
