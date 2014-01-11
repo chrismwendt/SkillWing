@@ -32,10 +32,8 @@
             });
         %>
 
-        <!--
         <h1>Time value</h1>
         <input id="time_value_textbox" type="text">
-        -->
 
         <h1>Optimum training sequence</h1>
         <div id="sequence">
