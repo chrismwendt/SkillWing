@@ -11,6 +11,14 @@ var port = process.env.PORT || 3000;
 
 var app = express();
 
+var skills = JSON.parse(fs.readFileSync('data/skills.json'));
+
+app.get('/', function(request, response) {
+    fs.readFile('views/index.template', function(error, data) {
+        response.send(__.template(String(data), {'skills': skills}));
+    });
+});
+
 app.use(express.static(__dirname + '/public'));
 
 db.init(function() {
