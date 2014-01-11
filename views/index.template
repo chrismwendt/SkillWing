@@ -26,9 +26,7 @@
         <%
             _.each(skills, function(skill, index, list) {
                 print(skill+' ');
-                print('<input class="current level" id="'+skill+'_level_current" type="text">');
-                print(' / ');
-                print('<input class="target level" id="'+skill+'_level_target" type="text">');
+                print('<input class="level" id="'+skill+'_level" type="text">');
                 // line break
                 if (index%3 == 2) { print('<br/>'); } else { print(' '); }
             });
