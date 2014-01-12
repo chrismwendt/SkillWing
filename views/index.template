@@ -63,8 +63,8 @@
                     for (var i = 0; i < rows.length; i++) {
                         var row = rows[i];
                         var tableRow = $('<tr>');
-                        for (var i = 0; i < headers.length; i++) {
-                            var header = headers[i];
+                        for (var j = 0; j < headers.length; j++) {
+                            var header = headers[j];
                             tableRow.append($('<td>').text(row[header]));
                         }
                         table.append(tableRow);
