@@ -43,6 +43,7 @@
 
             $(document).ready(function() {
                 time_value = 1000000;
+                $('#time_value_textbox').val(time_value);
                 $('.level').on('input', function(event) {
                     refresh();
                 });
