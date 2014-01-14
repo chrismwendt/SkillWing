@@ -97,11 +97,10 @@
                 });
             }
 
-            <!--
             $('#time_value_textbox').on('input', function(event) {
-                refresh();
+                time_value = this.value;
+                showGuide($('#skillMenu').val(), time_value);
             });
-            -->
         </script>
     </body>
 </html>
