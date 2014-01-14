@@ -2,7 +2,7 @@
     {
         "name": "Shortbow (u)",
         "requirements": {
-            "Fletching": 5
+            "Fletching": 1
         },
         "supplies": [
             {
@@ -21,7 +21,7 @@
     {
         "name": "Shortbow",
         "requirements": {
-            "Fletching": 5
+            "Fletching": 1
         },
         "supplies": [
             {
