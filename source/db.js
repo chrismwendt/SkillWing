@@ -85,3 +85,15 @@ exports.processItem = function(item, timestamp, callback) {
         }
     });
 }
+
+exports.price = function(id, callback) {
+    Item.findOne({id: id}, function(error, item) {
+        if (error) {
+            console.log(error);
+        }
+
+        callback(_.max(item.history, function(history) {
+            return history.timestamp;
+        }).price);
+    });
+};
