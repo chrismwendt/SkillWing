@@ -7,12 +7,10 @@
         "supplies": [
             {
                 "id": "1511",
-                "name": "Logs",
                 "rate": -1680
             },
             {
                 "id": "50",
-                "name": "Shortbow (u)",
                 "rate": 1680
             }
         ],
@@ -28,17 +26,14 @@
         "supplies": [
             {
                 "id": "50",
-                "name": "Shortbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "841",
-                "name": "Shortbow",
                 "rate": 2520
             }
         ],
@@ -54,12 +49,10 @@
         "supplies": [
             {
                 "id": "1511",
-                "name": "Logs",
                 "rate": -1680
             },
             {
                 "id": "48",
-                "name": "Shieldbow (u)",
                 "rate": 1680
             }
         ],
@@ -75,17 +68,14 @@
         "supplies": [
             {
                 "id": "48",
-                "name": "Shieldbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "839",
-                "name": "Shieldbow",
                 "rate": 2520
             }
         ],
@@ -101,12 +91,10 @@
         "supplies": [
             {
                 "id": "1521",
-                "name": "Oak logs",
                 "rate": -1680
             },
             {
                 "id": "54",
-                "name": "Oak shortbow (u)",
                 "rate": 1680
             }
         ],
@@ -122,17 +110,14 @@
         "supplies": [
             {
                 "id": "54",
-                "name": "Oak shortbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "843",
-                "name": "Oak shortbow",
                 "rate": 2520
             }
         ],
@@ -148,12 +133,10 @@
         "supplies": [
             {
                 "id": "1521",
-                "name": "Oak logs",
                 "rate": -1680
             },
             {
                 "id": "56",
-                "name": "Oak shieldbow (u)",
                 "rate": 1680
             }
         ],
@@ -169,17 +152,14 @@
         "supplies": [
             {
                 "id": "56",
-                "name": "Oak shieldbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "845",
-                "name": "Oak shieldbow",
                 "rate": 2520
             }
         ],
@@ -195,12 +175,10 @@
         "supplies": [
             {
                 "id": "1519",
-                "name": "Willow logs",
                 "rate": -1680
             },
             {
                 "id": "60",
-                "name": "Willow shortbow (u)",
                 "rate": 1680
             }
         ],
@@ -216,17 +194,14 @@
         "supplies": [
             {
                 "id": "60",
-                "name": "Willow shortbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "849",
-                "name": "Willow shortbow",
                 "rate": 2520
             }
         ],
@@ -242,12 +217,10 @@
         "supplies": [
             {
                 "id": "1519",
-                "name": "Willow logs",
                 "rate": -1680
             },
             {
                 "id": "58",
-                "name": "Willow shieldbow (u)",
                 "rate": 1680
             }
         ],
@@ -263,17 +236,14 @@
         "supplies": [
             {
                 "id": "58",
-                "name": "Willow shieldbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "847",
-                "name": "Willow shieldbow",
                 "rate": 2520
             }
         ],
@@ -289,12 +259,10 @@
         "supplies": [
             {
                 "id": "1517",
-                "name": "Maple logs",
                 "rate": -1680
             },
             {
                 "id": "64",
-                "name": "Maple shortbow (u)",
                 "rate": 1680
             }
         ],
@@ -310,17 +278,14 @@
         "supplies": [
             {
                 "id": "64",
-                "name": "Maple shortbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "853",
-                "name": "Maple shortbow",
                 "rate": 2520
             }
         ],
@@ -336,12 +301,10 @@
         "supplies": [
             {
                 "id": "1517",
-                "name": "Maple logs",
                 "rate": -1680
             },
             {
                 "id": "62",
-                "name": "Maple shieldbow (u)",
                 "rate": 1680
             }
         ],
@@ -357,17 +320,14 @@
         "supplies": [
             {
                 "id": "62",
-                "name": "Maple shieldbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "851",
-                "name": "Maple shieldbow",
                 "rate": 2520
             }
         ],
@@ -383,12 +343,10 @@
         "supplies": [
             {
                 "id": "1515",
-                "name": "Yew logs",
                 "rate": -1680
             },
             {
                 "id": "68",
-                "name": "Yew shortbow (u)",
                 "rate": 1680
             }
         ],
@@ -404,17 +362,14 @@
         "supplies": [
             {
                 "id": "68",
-                "name": "Yew shortbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "857",
-                "name": "Yew shortbow",
                 "rate": 2520
             }
         ],
@@ -430,12 +385,10 @@
         "supplies": [
             {
                 "id": "1515",
-                "name": "Yew logs",
                 "rate": -1680
             },
             {
                 "id": "66",
-                "name": "Yew shieldbow (u)",
                 "rate": 1680
             }
         ],
@@ -451,17 +404,14 @@
         "supplies": [
             {
                 "id": "66",
-                "name": "Yew shieldbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "855",
-                "name": "Yew shieldbow",
                 "rate": 2520
             }
         ],
@@ -477,12 +427,10 @@
         "supplies": [
             {
                 "id": "1513",
-                "name": "Magic logs",
                 "rate": -1680
             },
             {
                 "id": "72",
-                "name": "Magic shortbow (u)",
                 "rate": 1680
             }
         ],
@@ -498,17 +446,14 @@
         "supplies": [
             {
                 "id": "72",
-                "name": "Magic shortbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "861",
-                "name": "Magic shortbow",
                 "rate": 2520
             }
         ],
@@ -524,12 +469,10 @@
         "supplies": [
             {
                 "id": "1513",
-                "name": "Magic logs",
                 "rate": -1680
             },
             {
                 "id": "70",
-                "name": "Magic shieldbow (u)",
                 "rate": 1680
             }
         ],
@@ -545,17 +488,14 @@
         "supplies": [
             {
                 "id": "70",
-                "name": "Magic shieldbow (u)",
                 "rate": -2520
             },
             {
                 "id": "1777",
-                "name": "Bow string",
                 "rate": -2520
             },
             {
                 "id": "859",
-                "name": "Magic shieldbow",
                 "rate": 2520
             }
         ],
