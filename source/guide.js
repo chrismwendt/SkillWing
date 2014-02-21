@@ -87,8 +87,8 @@ exports.get = function(skill, timeValue, callback) {
             return {
                 levels: group.start + '-' + group.end,
                 method: group.group.name,
-                xp: group.group.xp[skill],
-                gp: group.group.gp
+                xp: Math.floor(group.group.xp[skill]),
+                gp: Math.floor(group.group.gp)
             };
         }));
     });
