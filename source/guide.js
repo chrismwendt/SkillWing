@@ -96,8 +96,8 @@ getPrime = function(skill, timeValue, methods, callback) {
             return {
                 levels: group.start + '-' + group.end,
                 method: group.group.name,
-                xp: rsNumber.fromInt(Math.floor(group.group.xp[skill])),
-                gp: rsNumber.fromInt(Math.floor(group.group.gp))
+                "xp/h": rsNumber.fromInt(Math.floor(group.group.xp[skill])),
+                "gp/h": rsNumber.fromInt(Math.floor(group.group.gp))
             };
         }));
     });
