@@ -59,7 +59,7 @@
                     var table = $('#guide');
                     var headers = Object.keys(rows[0]);
                     for (var i = 0; i < headers.length; i++) {
-                        table.append($('<th>').text(headers[i]));
+                        table.append($('<th align=left>').text(headers[i]));
                     }
                     for (var i = 0; i < rows.length; i++) {
                         var row = rows[i];
