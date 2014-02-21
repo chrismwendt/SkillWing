@@ -1,6 +1,7 @@
 var _ = require('underscore');
 var fs = require('fs');
 var async = require('async');
+var rsNumber = require('./rs-number');
 var db;
 
 var methods = JSON.parse(fs.readFileSync('data/methods.json'));
@@ -87,8 +88,8 @@ exports.get = function(skill, timeValue, callback) {
             return {
                 levels: group.start + '-' + group.end,
                 method: group.group.name,
-                xp: Math.floor(group.group.xp[skill]),
-                gp: Math.floor(group.group.gp)
+                xp: rsNumber.fromInt(Math.floor(group.group.xp[skill])),
+                gp: rsNumber.fromInt(Math.floor(group.group.gp))
             };
         }));
     });
