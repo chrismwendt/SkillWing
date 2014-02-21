@@ -4,8 +4,6 @@ var async = require('async');
 var rsNumber = require('./rs-number');
 var db;
 
-var methods = JSON.parse(fs.readFileSync('data/methods.json'));
-
 var groupBy = function(list, f) {
     return _.foldl(list, function(acc, value) {
         if (acc.length == 0) {
@@ -44,6 +42,16 @@ var agpxp = function(timeValue, xp, gp) {
 }
 
 exports.get = function(skill, timeValue, callback) {
+    db.Method.find({}, function(error, results) {
+        if (error) {
+            console.log(error);
+            return;
+        }
+        getPrime(skill, timeValue, results, callback);
+    });
+}
+
+getPrime = function(skill, timeValue, methods, callback) {
     timeValue = Number(timeValue);
     var skillMethods = _.filter(methods, function(method) {
         return skill in method.xp;

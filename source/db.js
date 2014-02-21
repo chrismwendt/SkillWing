@@ -37,7 +37,18 @@ var Item = mongoose.model('Item', {
     ]
 });
 
+var Method = mongoose.model('Method', {
+    name: String,
+    requirements: {},
+    supplies: [ {
+            id: Number,
+            rate: Number
+        }
+    ], xp: {}
+});
+
 exports.Item = Item;
+exports.Method = Method;
 
 var createItem = function(newItem, timestamp, callback) {
     Item.create({
